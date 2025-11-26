@@ -26,7 +26,7 @@ Userscript and extension for X/Twitter that filters posts by country, region, or
 
 ## Usage
 
-1.  **Userscript:** Download `X-Sentinel-en-us.user.js` from the Releases section (or use `X-Sentinel-user-en-us.js` from this repository) and install it in your userscript manager (Tampermonkey/Greasemonkey).
+1.  **Userscript:** Download `X-Sentinel.user.js` from the Releases section (or use `X-Sentinel-user.js` from this repository) and install it in your userscript manager (Tampermonkey/Greasemonkey).
 2.  **Chrome Extension:** Download the `X-Sentinel-extension.zip` file from the Releases section. In `chrome://extensions` (enable Developer Mode), load it as an unpacked extension or load the `extension/` folder directly.
 3.  **Access:** Open X/Twitter and click the **🚫 X-Sentinel** button in the side navigation bar.
 4.  **Configuration:** Add countries/regions/languages; toggle between hide or visual highlight modes.
@@ -34,8 +34,8 @@ Userscript and extension for X/Twitter that filters posts by country, region, or
 
 ## Development Notes
 
-- **Zero Build:** No build step required; edit the `X-Sentinel-en-us-user.js` file directly.
-- **Formatting (Optional):** `npx prettier --check "X-Sentinel-en-us-user.js"`.
+- **Zero Build:** No build step required; edit the `X-Sentinel-user.js` file directly.
+- **Formatting (Optional):** `npx prettier --check "X-Sentinel-user.js"`.
 - **Storage:** Uses `localStorage` + IndexedDB (`known` store for users, `stats` for totals).
 - **Extension:** Entry point at `extension/content.js`, manifest at `extension/manifest.json`.
 - **CI/CD:** Pushes to the `main`/`master` branch generate build artifacts (userscript, zipped extension, changelog). Tags `v*` automatically publish a GitHub Release with these files and the changelog.

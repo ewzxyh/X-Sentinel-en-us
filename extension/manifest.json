@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "X-Sentinel",
+  "description": "Adiciona bandeiras de países aos perfis/mensagens e permite filtrar o feed bloqueando conteúdos por país, região e idioma no X/Twitter.",
+  "version": "7.0.0",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
